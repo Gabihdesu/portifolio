@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0rem;
+  color: #000000;
+}
+
+h1, h2, h3, p {
+  margin: 0rem;
+}
+
+ul {
+  margin: 0rem;
+  padding: 0rem;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.introducao, .experiencia, .formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 3rem 9rem 4rem 9rem;
+  gap: 3rem;
+  max-width: 75rem;
+}
+
+
+.subtitulo{
+  font-size: 8rem;
+  font-family: 'homework';
+  text-transform: uppercase;
+  word-break: break-all;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 2rem;
+} 
+
+@font-face {
+  font-family: "homework";
+  src: url("/Homework.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "november";
+  src: url("/November.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*tablet*/
+
+@media only screen and (min-width:600px) and (max-width: 988px){
+  .subtitulo {
+    font-size: 6rem;
+  }
+
+  .titulo h1:before {
+    right: 0rem;
+    left: 0.2rem;
+  }
+  .titulo {
+    padding: 0rem;
+  }
+
+  .introducao, .experiencia {
+    padding: 0rem 2rem;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* celulares */
+@media only screen and (max-width:600px){
+  .introducao, .experiencia {
+      grid-template-columns: 1fr;
+      padding: 0rem 2rem;
+      margin: 0 auto;
+      max-width: 30rem;
+    }
+
+    .menu {
+      grid-template-columns: 1fr;
+      padding: 3rem;
+      max-width: 25rem;
+      align-items: center;
+      margin: 0rem auto;
+    }
+
+    .menu h1 {
+      margin-left: 0 auto;
+    }
+
+    nav ul li{
+      border: solid #000000 0.2rem;
+      padding: 0.5rem 1rem;
+    }
+
+    nav ul li:hover {
+      border: solid #61DFF0 0.2rem;
+    }
+
+    .titulo h1::before {
+      left: 0.01rem;
+    }
+
+    .lado-direito {
+      margin-left: 0rem;
+    }
+    
+    /* experiencia*/
+    .text {
+      max-width: none;
+    }
+
+    .experiencia{
+      margin-top: 10rem;
+      align-items: center;
+    }
+    
+    .linha::after {
+      opacity: 0;
+    }
+
+    .subtitulo {
+      font-size: 4rem;
+    }
+
+    /* formacao*/
+    .cursos {
+      grid-template-columns: 1fr;
+    }
+    
+    .formacao {
+      grid-template-columns: 1fr;
+      padding: 0rem;
+      margin: 0 auto;
+      max-width: 50rem;
+      padding: 2rem 5rem 5rem 1rem;
+    }
+
+    /*Contato*/
+
+    .contatos {
+      padding: 0rem 0rem 10rem 0rem;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      max-width: 30rem;
+    }
+
+    .contatos ul {
+      grid-area: 2/ 1;
+    }
+
+    .contatos::before {
+     opacity: 0;
+    }
+  
+    .rodape {
+      padding: 0rem 0rem;
+    }
+
+}

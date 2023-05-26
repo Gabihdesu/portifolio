@@ -1,0 +1,24 @@
+header {
+  grid-template-columns: 2fr 1fr;
+  display: grid;
+  padding: 3rem 9rem 4rem 9rem;
+  gap: 3rem;
+  max-width: 1200px;
+}
+
+nav ul{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  text-align: center;
+  gap: 1.25rem;
+  padding: 0.5rem;
+}
+
+.menu a:hover {
+  color: #61DFF0;
+}
+
+.menu h1 {
+  margin-left: 2rem;
+}
+

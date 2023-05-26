@@ -1,0 +1,279 @@
+@import url(../css/header.css);
+@import url(../css/gerais.css);
+
+/* INTRODUCAO */
+
+.titulo h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.titulo h1::before {
+  content: "";
+  background: url("/img/coracao\ detalhe.png") no-repeat center;
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  top: -1rem;
+  right: 28rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.titulo p {
+  font-size: 1.5rem;
+}
+
+.titulo {
+  padding: 1.5rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+/* EXPERIENCIA */
+.experiencia .subtitulo {
+  color: #F8BDE0;
+}
+
+.lado-direito{
+  margin-left: 6rem;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 4rem;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  padding: 1.5rem; 
+  background: #F8BDE0;
+  position: relative;
+  justify-content: end;
+  border-radius: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.lista p {
+  line-height: 1.4;
+  font-size: 0.875rem;
+  max-width: 40ch;
+}
+
+.lista a {
+  font-weight: bold;
+  color: #FF455C;
+}
+
+.lista ul li {
+  border: solid white 0.1rem;
+  border-radius: 0.3rem;
+  background: white;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: start;
+}
+
+.lista {
+  margin-bottom: 2rem;
+}
+
+.lista a:hover {
+  color: #61DFF0;
+  z-index: 1;
+}
+
+.empresa-ano {
+  position: absolute;
+  margin-left: -5rem;
+  top: 2rem;
+  font-family: 'homework';
+}
+
+.lista::before {
+  content: "";
+  background: url("/img/linha\ do\ tempo.svg") no-repeat;
+  width: 2rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 1.8rem;
+  left: -1.8rem;
+  display: block;
+}
+
+.linha::after {
+  content: "";
+  width: 0.06rem;
+  height: 13rem;
+  position: absolute;
+  background: black;
+  display: block;
+  top: 3.5rem;
+  left: -1rem;
+}
+
+
+/* FORMACAO */
+.formacao {
+  background: #F8BDE0;
+}
+
+.formacao .subtitulo {
+  color: #FF455C;
+}
+
+.formacao p {
+  line-height: 1.4;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+
+.formacao strong {
+  color: #FF455C;
+}
+
+.cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-top: 2rem;
+}
+
+.box-rosa {
+  background: #FF455C;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: solid black 0.1rem;
+  position: relative;
+}
+
+.box-rosa::before {
+  content: "";
+  background: url("/img/coracao.svg") no-repeat center;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: -1.3rem;
+  top: 5rem;
+}
+
+.box-rosa p {
+  font-size: 1.3rem;
+  padding: 1rem 0  1rem 0;
+}
+
+.formacao span {
+  color: #F8BDE0;
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  background: url("/img/book.svg") no-repeat center;
+  width: 1.4rem;
+  height: 1.5rem;
+  position: absolute;
+  left: -2rem;
+}
+
+.box p {
+  font-size: 1.3rem;
+}
+
+.horas {
+  text-align: right;
+}
+
+.idiomas p {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.idiomas {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.idiomas::before {
+  content: "";
+  background: url("/img/idiomas.svg") no-repeat center;
+  width: 3rem;
+  height: 2rem;
+  position: absolute;
+  left: -3rem;
+}
+
+/*  FOOTER  */
+
+.contatos {
+  color: #ffff;
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem 9rem 4rem 9rem;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  max-width: 75rem;
+  position: relative;
+}
+
+.contatos p {
+  font-family: 'homework';
+  font-size: 2rem;
+}
+
+.contatos ul li {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #ffff;
+}
+.contatos ul li a {
+  color: #ffff;
+}
+
+.contatos ul li a:hover {
+  color: #61DFF0;
+}
+
+.rodape {
+  font-size: 1rem;
+  background: #000000;
+  color: #ffff;
+  padding: 5rem 9rem;
+}
+
+.contatos::before {
+  content: "";
+  background: url("/img/coracao\ detalhe.svg") no-repeat;
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  top: -7rem;
+  left: 6rem;
+}
