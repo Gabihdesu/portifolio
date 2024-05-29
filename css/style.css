@@ -205,6 +205,14 @@ h3 {
   font-size: 1.3rem;
 }
 
+.box a {
+  color: #ffff;
+}
+
+.box a:hover {
+  color: #61DFF0;
+}
+
 .horas {
   text-align: right;
 }
