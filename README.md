@@ -1,4 +1,4 @@
-<h2>GABRIEL DE MELO SANTIAGO</h2>
+<h2>GABRIELA DE MELO SANTIAGO</h2>
 
 <p>This is my curriculum made from scratch all in HTML and CSS.</p>
 
